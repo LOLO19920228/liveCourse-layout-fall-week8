@@ -1,0 +1,21 @@
+.header {
+    .navbar {
+        height: 64px;
+        .navbar-toggler {
+            border: none;
+            right: 15px;
+            top: 10px;
+            span {
+                font-size: 44px;
+            }
+        }
+        .navbar-collapse li a{
+            @include mobile {
+                border-bottom: 1px solid $light;
+                padding-top: 14px;
+                padding-bottom: 13px;
+                font-weight: 500;
+              }
+        }
+    }
+}

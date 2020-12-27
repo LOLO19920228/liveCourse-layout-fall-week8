@@ -1,0 +1,388 @@
+---
+title: PETPET
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="quickSearch container-md position-relative mb-md-20 mb-15">
+  <div class="row justify-content-md-center justify-content-lg-start">
+    <div class="quickSearchImg col-lg-5 col-md-4 mb-md-0 mb-3">
+      <img class="object-cover" src="assets/images/index-1.png" alt="">
+    </div>
+    <div
+      class="quickSearchContent col-lg-7 col-md-6 col-12 d-flex flex-column justify-content-center align-items-md-start align-items-center">
+      <h2 class="fz-title-xl fz-pad-title-xl fz-mobile-title-xl font-weight-bold text-primary mb-lg-4 mb-md-2 mb-1">
+        寵物服務，盡在 PETPET</h2>
+      <p class="fz-xl fz-pad-xl font-weight-bold text-primary mb-lg-12 mb-md-5 mb-3">當您的毛孩有需要時，<br
+          class="d-lg-none">幫您找到最合適的服務者！</p>
+      <form action="" class="d-lg-flex">
+        <select class="form-control custom-select fz-nl quickSearchBreedSelect mb-lg-0 mb-md-3 mb-4"
+          id="quickSearchBreedSelect">
+          <option selected>品種</option>
+          <option>貓</option>
+          <option>狗</option>
+          <option>鱷魚</option>
+          <option>鄰居的小孩</option>
+        </select>
+        <select class="form-control custom-select fz-nl quickSearchServiceSelect mb-lg-0 mb-md-3 mb-4"
+          id="quickSearchServiceSelect">
+          <option selected>服務</option>
+          <option>寵物寄宿</option>
+          <option>寵物到府保母</option>
+          <option>鱷寵物美容洗澡</option>
+          <option>寵物行為訓練</option>
+        </select>
+        <select class="form-control custom-select fz-nl quickSearchAeraSelect mb-lg-0 mb-md-4 mb-3"
+          id="quickSearchAeraSelect">
+          <option selected>地區</option>
+          <option>台北市</option>
+          <option>基隆市</option>
+          <option>新北市</option>
+          <option>宜蘭縣</option>
+          <option>桃園市</option>
+          <option>新竹市</option>
+          <option>新竹縣</option>
+          <option>苗栗縣</option>
+          <option>台中市</option>
+          <option>彰化縣</option>
+          <option>南投縣</option>
+          <option>嘉義市</option>
+          <option>嘉義縣</option>
+          <option>雲林縣</option>
+          <option>台南市</option>
+          <option>高雄市</option>
+          <option>澎湖縣</option>
+          <option>金門縣</option>
+          <option>屏東縣</option>
+          <option>台東縣</option>
+          <option>花蓮縣</option>
+          <option>連江縣</option>
+        </select>
+        <button type="submit" class="btn btn-danger fz-nl">搜尋</button>
+      </form>
+    </div>
+  </div>
+  <div class="moreInfo d-md-block d-none position-absolute">
+    <a href="#popularPetSitters" id="moreInfoBtn" class="moreInfoBtn"><span
+        class="material-icons text-danger">arrow_drop_down_circle</span< /a>
+  </div>
+</section>
+
+<!-- 等會JS之後再回來調整SWIPER往右偏移的正確數字 -->
+<section class="popularPetSitters mb-lg-15 mb-md-10 mb-10 position-relative" id="popularPetSitters">
+  <div class="container">
+    <h3 class="text-primary font-weight-bold fz-title-nl mb-1">本月熱門保母</h3>
+    <p class="text-primary font-weight-medium fz-nl mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+  </div>
+  <!-- Swiper Start-->
+  <div class="swiper-container d-none d-md-block container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card position-relative border-0 mb-5">
+          <img src="assets/images/index-2.jpeg" class="card-img-top object-cover">
+          <div class="card-img position-absolute">
+            <img src="assets/images/person-1.png" alt="">
+          </div>
+          <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+            <h5 class="card-title text-primary font-weight-medium text-center mb-1">Jamie</h5>
+            <p class="card-text text-primary mb-3">寄宿、美容、寵物行為訓練</p>
+            <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+            <div class="card-statistics d-flex justify-content-center">
+              <div class="mr-lg-15 mr-md-8 mr-15">
+                <p class="text-primary text-center">獲得評價</p>
+                <p class="text-primary fz-xs text-center"><span>198</span>則</p>
+              </div>
+              <div>
+                <p class="text-primary text-center">已完成訂單</p>
+                <p class="text-primary fz-xs text-center"><span>580</span>件</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card position-relative border-0 mb-5">
+          <img src="assets/images/index-3.jpeg" class="card-img-top object-cover">
+          <div class="card-img position-absolute">
+            <img src="assets/images/person-2.png" alt="">
+          </div>
+          <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+            <h5 class="card-title text-primary font-weight-medium text-center mb-1">Eric</h5>
+            <p class="card-text text-primary mb-3">寄宿、美容</p>
+            <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+            <div class="card-statistics d-flex justify-content-center">
+              <div class="mr-lg-15 mr-md-8 mr-15">
+                <p class="text-primary text-center">獲得評價</p>
+                <p class="text-primary fz-xs text-center"><span>176</span>則</p>
+              </div>
+              <div>
+                <p class="text-primary text-center">已完成訂單</p>
+                <p class="text-primary fz-xs text-center"><span>208</span>件</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card position-relative border-0 mb-5">
+          <img src="assets/images/index-4.jpeg" class="card-img-top object-cover">
+          <div class="card-img position-absolute">
+            <img src="assets/images/person-3.png" alt="">
+          </div>
+          <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+            <h5 class="card-title text-primary font-weight-medium text-center mb-1">Yvonne</h5>
+            <p class="card-text text-primary mb-3">美容、寵物行為訓練</p>
+            <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+            <div class="card-statistics d-flex justify-content-center">
+              <div class="mr-lg-15 mr-md-8 mr-15">
+                <p class="text-primary text-center">獲得評價</p>
+                <p class="text-primary fz-xs text-center"><span>52</span>則</p>
+              </div>
+              <div>
+                <p class="text-primary text-center">已完成訂單</p>
+                <p class="text-primary fz-xs text-center"><span>196</span>件</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card position-relative border-0 mb-5">
+          <img src="assets/images/index-2.jpeg" class="card-img-top object-cover">
+          <div class="card-img position-absolute">
+            <img src="assets/images/person-1.png" alt="">
+          </div>
+          <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+            <h5 class="card-title text-primary font-weight-medium text-center mb-1">路人甲</h5>
+            <p class="card-text text-primary mb-3">寄宿、美容</p>
+            <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+            <div class="card-statistics d-flex justify-content-center">
+              <div class="mr-lg-15 mr-md-8 mr-15">
+                <p class="text-primary text-center">獲得評價</p>
+                <p class="text-primary fz-xs text-center"><span>222</span>則</p>
+              </div>
+              <div>
+                <p class="text-primary text-center">已完成訂單</p>
+                <p class="text-primary fz-xs text-center"><span>458</span>件</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card position-relative border-0 mb-5">
+          <img src="assets/images/index-3.jpeg" class="card-img-top object-cover">
+          <div class="card-img position-absolute">
+            <img src="assets/images/person-2.png" alt="">
+          </div>
+          <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+            <h5 class="card-title text-primary font-weight-medium text-center mb-1">路人乙</h5>
+            <p class="card-text text-primary mb-3">寄宿、美容、寵物行為訓練</p>
+            <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+            <div class="card-statistics d-flex justify-content-center">
+              <div class="mr-lg-15 mr-md-8 mr-15">
+                <p class="text-primary text-center">獲得評價</p>
+                <p class="text-primary fz-xs text-center"><span>198</span>則</p>
+              </div>
+              <div>
+                <p class="text-primary text-center">已完成訂單</p>
+                <p class="text-primary fz-xs text-center"><span>580</span>件</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card position-relative border-0 mb-5">
+          <img src="assets/images/index-4.jpeg" class="card-img-top object-cover">
+          <div class="card-img position-absolute">
+            <img src="assets/images/person-3.png" alt="">
+          </div>
+          <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+            <h5 class="card-title text-primary font-weight-medium text-center mb-1">路人丙</h5>
+            <p class="card-text text-primary mb-3">寵物行為訓練</p>
+            <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+            <div class="card-statistics d-flex justify-content-center">
+              <div class="mr-lg-15 mr-md-8 mr-15">
+                <p class="text-primary text-center">獲得評價</p>
+                <p class="text-primary fz-xs text-center"><span>222</span>則</p>
+              </div>
+              <div>
+                <p class="text-primary text-center">已完成訂單</p>
+                <p class="text-primary fz-xs text-center"><span>522</span>件</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next material-icons btn-primary rounded-circle fz-title-xl d-none d-md-block">arrow_right
+  </div>
+  <div class="swiper-button-prev material-icons btn-primary rounded-circle fz-title-xl d-none d-md-block">arrow_left
+  </div>
+  <!-- Swiper End-->
+  <div class="container d-md-none">
+    <div class="row">
+      <div class="card position-relative border-0 mb-3 col-12 p-0">
+        <img src="assets/images/index-2.jpeg" class="card-img-top object-cover">
+        <div class="card-img position-absolute">
+          <img src="assets/images/person-1.png" alt="">
+        </div>
+        <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+          <h5 class="card-title text-primary font-weight-medium text-center mb-1">Jamie</h5>
+          <p class="card-text text-primary mb-3">寄宿、美容、寵物行為訓練</p>
+          <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+          <div class="card-statistics d-flex justify-content-center">
+            <div class="mr-lg-15 mr-md-8 mr-15">
+              <p class="text-primary text-center">獲得評價</p>
+              <p class="text-primary fz-xs text-center"><span>198</span>則</p>
+            </div>
+            <div>
+              <p class="text-primary text-center">已完成訂單</p>
+              <p class="text-primary fz-xs text-center"><span>580</span>件</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card position-relative border-0 mb-3 col-12 p-0">
+        <img src="assets/images/index-3.jpeg" class="card-img-top object-cover">
+        <div class="card-img position-absolute">
+          <img src="assets/images/person-2.png" alt="">
+        </div>
+        <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+          <h5 class="card-title text-primary font-weight-medium text-center mb-1">Eric</h5>
+          <p class="card-text text-primary mb-3">寄宿、美容</p>
+          <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+          <div class="card-statistics d-flex justify-content-center">
+            <div class="mr-lg-15 mr-md-8 mr-15">
+              <p class="text-primary text-center">獲得評價</p>
+              <p class="text-primary fz-xs text-center"><span>76</span>則</p>
+            </div>
+            <div>
+              <p class="text-primary text-center">已完成訂單</p>
+              <p class="text-primary fz-xs text-center"><span>208</span>件</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card position-relative border-0 mb-0 col-12 p-0">
+        <img src="assets/images/index-2.jpeg" class="card-img-top object-cover">
+        <div class="card-img position-absolute">
+          <img src="assets/images/person-1.png" alt="">
+        </div>
+        <div class="card-body px-0 pt-0 pb-7 d-flex flex-column align-items-center">
+          <h5 class="card-title text-primary font-weight-medium text-center mb-1">Yvonne</h5>
+          <p class="card-text text-primary mb-3">寄宿、美容、寵物行為訓練</p>
+          <a href="#" class="btn btn-danger py-3 mb-6">預約</a>
+          <div class="card-statistics d-flex justify-content-center">
+            <div class="mr-lg-15 mr-md-8 mr-15">
+              <p class="text-primary text-center">獲得評價</p>
+              <p class="text-primary fz-xs text-center"><span>52</span>則</p>
+            </div>
+            <div>
+              <p class="text-primary text-center">已完成訂單</p>
+              <p class="text-primary fz-xs text-center"><span>196</span>件</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="onlineAppointment container mb-lg-20 mb-md-15 mb-10">
+  <h3 class="text-primary font-weight-bold fz-title-nl mb-1">線上預約</h3>
+  <p class="text-primary font-weight-medium fz-nl mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+  <div class="d-flex flex-column flex-md-row">
+    <div class="boarding bg-cover">
+      <a class="h-100 position-relative filter-4-hover" href="#">
+        <div class="filter-4"></div>
+        <h4
+          class="position-absolute align-origin text-white font-weight-bold d-flex h-100 w-100 align-items-center justify-content-center">
+          寵物寄宿</h4>
+      </a>
+    </div>
+    <div class="groomig bg-cover">
+      <a class="h-100 position-relative filter-4-hover" href="#">
+        <div class="filter-4"></div>
+        <h4
+          class="position-absolute align-origin text-white font-weight-bold d-flex h-100 w-100 align-items-center justify-content-center">
+          寵物美容</h4>
+      </a>
+    </div>
+    <div class="group d-flex flex-column justify-content-md-between">
+      <div class="homeCare bg-cover">
+        <a class="h-100 position-relative filter-4-hover" href="#">
+          <div class="filter-4"></div>
+          <h4
+            class="position-absolute align-origin text-white font-weight-bold d-flex h-100 w-100 align-items-center justify-content-center">
+            到府照顧</h4>
+        </a>
+      </div>
+      <div class="walkTheDog bg-cover">
+        <a class="h-100 position-relative filter-4-hover" href="#">
+          <div class="filter-4"></div>
+          <h4
+            class="position-absolute align-origin text-white font-weight-bold d-flex h-100 w-100 align-items-center justify-content-center">
+            寵物保姆</h4>
+        </a>
+      </div>
+    </div>
+    <div class="behaviorTraining bg-cover">
+      <a class="h-100 position-relative filter-4-hover" href="#">
+        <div class="filter-4"></div>
+        <h4
+          class="position-absolute align-origin text-white font-weight-bold d-flex h-100 w-100 align-items-center justify-content-center">
+          行為訓練</h4>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="statistics bg-cover py-15 py-md-20 mb-lg-20 mb-md-15 mb-10">
+  <div class="container">
+    <p class="text-white fz-title-xl font-weight-bold mb-12 mb-md-25">PETPET目前已有</p>
+    <div class="row mb-md-13">
+      <div class="col-3 d-md-none"></div>
+      <div class="col-6 col-md-4 col-lg-3 border-left mb-20 mb-md-0">
+        <p class="text-white fz-nl ml-4 font-weight-medium"><span
+            class="fz-title-xxl font-weight-bold">5278</span><br>人使用PETPET</p>
+      </div>
+      <div class="col-3 d-md-none"></div>
+      <div class="col-3 d-md-none"></div>
+      <div class="col-6 col-md-4 col-lg-3 border-left mb-20 mb-md-0">
+        <p class="text-white fz-nl ml-4 font-weight-medium"><span
+            class="fz-title-xxl font-weight-bold">580</span><br>人成為寵物保母</p>
+      </div>
+      <div class="col-3 d-md-none"></div>
+      <div class="col-3 d-md-none"></div>
+      <div class="col-6 col-md-4 col-lg-3 border-left mb-21 mb-md-0">
+        <p class="text-white fz-nl ml-4 font-weight-medium"><span
+            class="fz-title-xxl font-weight-bold">10000+</span><br>已完成服務</p>
+      </div>
+      <div class="col-3 d-md-none"></div>
+    </div>
+  </div>
+</section>
+
+<section class="appointmentSteps container mb-lg-20 mb-md-15 mb-10">
+  <h3 class="text-primary font-weight-bold fz-title-nl mb-1">預約流程</h3>
+  <p class="text-primary font-weight-medium fz-nl mb-3 mb-md-5">輕鬆三步驟，立即獲取最佳服務！</p>
+  <div class="row">
+    <div class="col-md-4 mb-8 mb-md-0">
+      <p class="text-primary font-weight-medium fz-nl mb-1">1.查詢想要的服務</p>
+      <img class="object-cover w-100" src="assets/images/index-10.png" alt="">
+    </div>
+    <div class="col-md-4 mb-8 mb-md-0">
+      <p class="text-primary font-weight-medium fz-nl mb-1">2.找到合適的保姆</p>
+      <img class="object-cover w-100" src="assets/images/index-11.png" alt="">
+    </div>
+    <div class="col-md-4">
+      <p class="text-primary font-weight-medium fz-nl mb-1">3.填寫資料完成預約</p>
+      <img class="object-cover w-100" src="assets/images/index-12.png" alt="">
+    </div>
+  </div>
+</section>

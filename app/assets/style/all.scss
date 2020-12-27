@@ -1,0 +1,25 @@
+// boostrap
+@import "functions";
+@import "./helpers/variables";
+@import "bootstrap";
+
+//base
+@import "base/base";
+
+//grid
+@import "grid/grid";
+
+// utilities
+@import "utilities/utilities";
+
+//components
+@import "components/card";
+@import "components/swiper";
+
+// layout
+@import "layout/header";
+@import "layout/dedicatedService";
+@import "layout/footer";
+
+// pages
+@import "pages/index";

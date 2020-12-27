@@ -1,0 +1,228 @@
+.quickSearch {
+    @include pad {
+        height: calc(100vh - 64px);
+    }
+    @include mobile {
+        height: 100%;
+    }
+    .quickSearchImg{
+        @include pc {
+            img{
+                height: calc(100vh - 64px);
+                margin-left: calc(465px - 50vw);
+                min-width: 41.66667vw;
+            }
+        }
+        @include full-screen-pc{
+            img{
+                margin-left: calc(555px - 50vw);
+            }
+        }
+        @include pad {
+            margin-left: 200px; //為了讓pad版的圖片與表格不要並排
+            margin-right: 200px; //為了讓pad版的圖片與表格不要並排
+        }
+        @include mobile {
+                padding: 0;
+                margin-left: 0px; //還原pad版的調整
+                margin-right: 0px; //還原pad版的調整
+            img{
+                height: 352px;
+                width: 100vw;
+            }
+        }
+    }
+    .quickSearchContent{
+        @include pc {
+            form{
+                width: 100%;
+                .quickSearchBreedSelect {
+                    width: 20%;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+                .quickSearchServiceSelect {
+                    width: 33%;
+                    border-radius: 0px;
+                }
+                .quickSearchAeraSelect {
+                    width: 33%;
+                    border-radius: 0px;
+                }
+                .btn {
+                    width: 14%;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+        @include pad {
+            // min-width: 390px;
+            padding-left: 0;
+            padding-right: 0;
+            form{
+                form-control, .btn{
+                    width: 390px;
+                }
+            }
+        }
+        @include mobile {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            p{
+                text-align: center;
+            }
+            form{
+                form-control, .btn{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+    
+    .moreInfo{
+        bottom: 20px;
+        right: 15px;
+        span{
+            font-size: 46px;
+        }
+        span:hover{
+            font-size: 50px;
+        }
+        @include pad {
+            bottom: 40px;
+        }
+    }
+}
+.popularPetSitters{
+    .row{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.onlineAppointment{
+    .boarding, .groomig, .group, .behaviorTraining{
+        @include pc {
+            height: 350px;
+        }
+        @include pad {
+            height: 210px;
+        }
+    }
+    .boarding, .groomig, .behaviorTraining{
+        @include mobile {
+            height: 132px;
+            min-width: 100%;
+        }
+    }
+    .boarding{
+        background-image: url(/assets/images/index-5.jpeg);
+        @include pc {
+            width: 350px;
+            margin-right: 6px;
+        }
+        @include pad {
+            width: 210px;
+            margin-right: 4px;
+        }
+        @include mobile {
+            margin-right: 0;
+            margin-bottom: 4px;
+        }
+    }
+    .groomig{
+        background-image: url(/assets/images/index-6.jpeg);
+        @include pc {
+            width: 303px;
+            margin-right: 6px;
+        }
+        @include pad {
+            width: 182px;
+            margin-right: 4px;
+        }
+        @include mobile {
+            margin-right: 0;
+            margin-bottom: 4px;
+        }
+    }
+    .group{
+        @include pc {
+            width: 267px;
+            margin-right: 6px;
+        }
+        @include pad {
+            width: 160px;
+            margin-right: 4px;
+        }
+        @include mobile {
+            min-width: 100%;
+            margin-bottom: 4px;
+            height: 268px;
+        }
+        .homeCare{
+            background-image: url(/assets/images/index-7.jpeg);
+            @include pc {
+                height: 172px;
+            }
+            @include pad {
+                height: 103px;
+            }
+            @include mobile {
+                height: 132px;
+                margin-bottom: 4px;
+            }
+        }
+        .walkTheDog{
+            background-image: url(/assets/images/index-8.jpeg);
+            @include pc {
+                height: 172px;
+            }
+            @include pad {
+                height: 103px;
+            }
+            @include mobile {
+                height: 132px;
+            }
+        }
+    }
+    .behaviorTraining{
+        background-image: url(/assets/images/index-3.jpeg);
+        @include pc {
+            width: 172px;
+        }
+        @include pad {
+            width: 125px;
+            margin-right: 4px;
+        }
+        @include mobile {
+            margin-right: 0;
+            margin-bottom: 4px;
+        }
+    }
+}
+.statistics{
+    background-image: url(/assets/images/index-9.jpeg);
+    .col-md-4, .col-lg-3{
+        padding-bottom: 110px;
+        border-width: 2px !important;
+    }
+    .col-6{
+        padding-bottom: 18px;
+        border-width: 2px !important;
+    }
+}
+.appointmentSteps{
+    img{
+        @include pc {
+            height: 160px;
+        }
+        @include pad {
+            height: 99px;
+        }
+        @include mobile {
+            height: 160px;
+        }
+    }
+}
