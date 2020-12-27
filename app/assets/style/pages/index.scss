@@ -118,7 +118,7 @@
         }
     }
     .boarding{
-        background-image: url(/assets/images/index-5.jpeg);
+        background-image: url(../images/index-5.jpeg);
         @include pc {
             width: 350px;
             margin-right: 6px;
@@ -133,7 +133,7 @@
         }
     }
     .groomig{
-        background-image: url(/assets/images/index-6.jpeg);
+        background-image: url(../images/index-6.jpeg);
         @include pc {
             width: 303px;
             margin-right: 6px;
@@ -162,7 +162,7 @@
             height: 268px;
         }
         .homeCare{
-            background-image: url(/assets/images/index-7.jpeg);
+            background-image: url(../images/index-7.jpeg);
             @include pc {
                 height: 172px;
             }
@@ -175,7 +175,7 @@
             }
         }
         .walkTheDog{
-            background-image: url(/assets/images/index-8.jpeg);
+            background-image: url(../images/index-8.jpeg);
             @include pc {
                 height: 172px;
             }
@@ -188,7 +188,7 @@
         }
     }
     .behaviorTraining{
-        background-image: url(/assets/images/index-3.jpeg);
+        background-image: url(../images/index-3.jpeg);
         @include pc {
             width: 172px;
         }
@@ -203,7 +203,7 @@
     }
 }
 .statistics{
-    background-image: url(/assets/images/index-9.jpeg);
+    background-image: url(../images/index-9.jpeg);
     .col-md-4, .col-lg-3{
         padding-bottom: 110px;
         border-width: 2px !important;
